@@ -1,0 +1,85 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../PHOTOS/leaves-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh; /* Ensures body covers at least the viewport height */
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem; /* Add some padding */
+  position: fixed; /* Keeps the header at the top */
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10; /* Ensures the header is above other content */
+  background-color: transparent; /* Makes the header background transparent */
+}
+
+nav {
+  /* Spacing for Nav box, not buttons */
+  padding-right: 8rem;
+  display: flex;
+}
+
+nav > a {
+  /* Spacing & Styling for nav buttons */
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-size: medium;
+}
+
+header > nav > a {
+  /* Creates Nav Button Backgrounds */
+  border-radius: 3rem;
+  padding: 5px 10px;
+  margin: 10px;
+  background-color: #a1b48e;
+}
+
+/* Footer Styles */
+footer {
+  position: fixed; /* Fix the footer to the bottom of the page */
+  left: 0;
+  bottom: 0; /* Positions the footer at the bottom */
+  width: 100%; /* Footer spans the full width of the page */
+  background-color: transparent; /* Makes the footer background transparent */
+  padding: 10px; /* Add some padding for spacing */
+  box-sizing: border-box; /* Ensures padding doesn't affect the total width */
+  display: flex; /* Utilize flexbox for layout */
+  align-items: center; /* Vertically aligns items in the middle */
+  justify-content: flex-start; /* Horizontally aligns items to the left */
+}
+
+footer a {
+  margin-right: 10px; /* Space between the icons */
+}
+
+footer a img {
+  height: 30px; /* Adjust the size of your icons */
+  width: auto; /* Maintain the aspect ratio of the icons */
+}
+
+footer a:hover {
+  /* Example: change the opacity or color on hover */
+  opacity: 0.7;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  nav a {
+    font-size: 0.8rem; /* Smaller font size for mobile devices */
+  }
+
+  body {
+    background-image: url("path-to-your-smaller-image.jpg"); /* Update this path */
+    background-size: cover; /* or 'contain', depending on your preference */
+  }
+}
