@@ -7,9 +7,9 @@ main {
 }
 
 .welcome-title {
-  font-size: 10rem;
+  font-size: 15rem;
   color: white;
-  /* Keep other styles as they are */
+  font-family: SignPainter;
 }
 
 main > div {
@@ -20,4 +20,10 @@ main > div {
   border-radius: 3rem;
   padding: 60px 90px;
   margin: 10px;
+}
+
+.quote {
+  font-family: SignPainter;
+  font-size: larger;
+  font-style: italic;
 }
