@@ -45,6 +45,11 @@ header > nav > a {
   background-color: #a1b48e;
 }
 
+header > nav > a:hover {
+  /* Changes Nav Button Color when Curser is over it */
+  background-color: #0e2217;
+}
+
 /* Footer Styles */
 footer {
   position: fixed; /* Fix the footer to the bottom of the page */
