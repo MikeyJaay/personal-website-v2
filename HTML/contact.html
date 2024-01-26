@@ -2,7 +2,7 @@
 <html lang="en">
   <!-- Links to CSS & JS Only  -->
   <head>
-    <link rel="stylesheet" href="../CSS/about.css" />
+    <link rel="stylesheet" href="../CSS/contact.css" />
     <link rel="stylesheet" href="../CSS/base-style.css" />
     <!-- Font for Nav Buttons -->
     <link
@@ -11,7 +11,7 @@
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MJ | About</title>
+    <title>MJ | Contact</title>
   </head>
   <!-- End of Links to CSS & JS Only  -->
   <!-- Start of Body Content -->
@@ -19,9 +19,9 @@
     <!-- Start of Header & Nav Bar -->
     <header>
       <nav>
-        <a href="../HTML/home.html">Home</a>
+        <a href="../HTML/home.html" class="nav-button">Home</a>
         <a href="../HTML/about.html">About</a>
-        <a href="../HTML/projects.html" class="dropbtn">Work</a>
+        <a href="../HTML/projects.html">Work</a>
         <a href="../HTML/contact.html">Contact</a>
       </nav>
     </header>
@@ -29,11 +29,24 @@
     <div>
       <aside></aside>
       <main>
-        <h1 class="welcome-title">About Me</h1>
+        <h1 class="welcome-title">Contact</h1>
+        <!-- Start of Form Code -->
+        <div class="box">
+          <form action="">
+            <div class="name-email">
+              <label for="name">Name</label>
+              <input type="text" name="Name" class="name" />
+              <label for="email">Email</label>
+              <input type="email" name="Email" class="email" />
+            </div>
+            <div class="message-box"></div>
+            <label for="message" class="message">Your Message</label>
+            <textarea name="message" class="message" rows="4"></textarea>
 
-        <!-- Card Code -->
-
-        <!-- Card Code End -->
+            <button type="submit" class="button">Submit</button>
+          </form>
+        </div>
+        <!-- End of Form Code -->
       </main>
       <aside></aside>
     </div>

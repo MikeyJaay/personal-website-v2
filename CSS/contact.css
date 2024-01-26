@@ -1,0 +1,68 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Add any additional styling for main */
+}
+
+.welcome-title {
+  font-size: 15rem;
+  color: white;
+  font-family: SignPainter;
+}
+
+/* Form Styling */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.name-email {
+  display: flex;
+  gap: 2rem; /* Adjust gap between name and email fields */
+  width: 100%; /* Full width */
+  padding-bottom: 20px;
+}
+
+.message-box {
+  display: flex;
+  width: 100%; /* Full width */
+  padding-bottom: 20px;
+}
+
+.name,
+.email {
+  flex: 1; /* Take equal space */
+}
+
+.message {
+  width: 100%; /* Full width */
+}
+
+.button {
+  flex: 0 0 auto; /* Button does not grow or shrink */
+  background-color: #a1b48e;
+  color: white;
+  border-radius: 2rem;
+}
+
+label {
+  color: white;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px; /* Adjust as needed */
+  background-color: #1225189d;
+  border-radius: 3rem;
+  padding: 10px;
+}
